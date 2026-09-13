@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 import Button from '../components/Button.jsx';
+import AnimatedBackground from '../components/AnimatedBackground.jsx';
 import { profile } from '../content/profile.js';
 
 // The introduction (User Story 1): must be visible without scrolling and
@@ -15,10 +16,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="flex min-h-[calc(100vh-5rem)] flex-col justify-center gap-6 px-6 py-16 sm:px-10"
+      className="relative flex min-h-[calc(100vh-5rem)] flex-col justify-center gap-6 overflow-hidden px-6 py-16 sm:px-10"
     >
+      <AnimatedBackground />
       <div
-        className={`max-w-3xl transition-all duration-700 ease-out ${
+        className={`relative z-10 max-w-3xl transition-all duration-700 ease-out ${
           mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
         }`}
       >

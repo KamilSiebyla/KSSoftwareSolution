@@ -20,6 +20,16 @@ export default {
         ink: '#0b1120',
         accent: '#22d3ee',
       },
+      keyframes: {
+        blob: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)' },
+          '33%': { transform: 'translate(6%, -8%) scale(1.15)' },
+          '66%': { transform: 'translate(-5%, 6%) scale(0.9)' },
+        },
+      },
+      animation: {
+        blob: 'blob 16s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
