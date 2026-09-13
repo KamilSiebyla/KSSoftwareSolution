@@ -59,16 +59,16 @@ description: "Task list template for feature implementation"
 
 ### Tests for User Story 1
 
-- [ ] T015 [P] [US1] Unit test in `tests/unit/content.profile.test.js` asserting the `ProfessionalProfile` object's `name`, `role`, `specialization`, and `tagline` fields are non-empty strings, per data-model.md's validation rule for this entity
-- [ ] T016 [P] [US1] Component test in `tests/unit/Hero.test.jsx` asserting the Hero section renders the profile's name, role, and specialization on initial render (no scroll/interaction required) and renders a call-to-action element
+- [X] T015 [P] [US1] Unit test in `tests/unit/content.profile.test.js` asserting the `ProfessionalProfile` object's `name`, `role`, `specialization`, and `tagline` fields are non-empty strings, per data-model.md's validation rule for this entity
+- [X] T016 [P] [US1] Component test in `tests/unit/Hero.test.jsx` asserting the Hero section renders the profile's name, role, and specialization on initial render (no scroll/interaction required) and renders a call-to-action element
 
 ### Implementation for User Story 1
 
-- [ ] T017 [US1] Populate `src/content/profile.js` with the real `ProfessionalProfile` content (name, role "Senior Developer / Software Architect", specialization "System Analysis & Maintenance", tagline), matching data-model.md's field shape
-- [ ] T018 [P] [US1] Build `src/sections/Hero.jsx` rendering the profile content from `src/content/profile.js`, styled with Tailwind so it's fully visible without scrolling (FR-001)
-- [ ] T019 [US1] Add a visually prominent call-to-action in `Hero.jsx` linking to the Contact section (FR-007)
-- [ ] T020 [US1] Apply an entrance animation to `Hero.jsx` using CSS transitions per research.md (no animation library dependency)
-- [ ] T021 [US1] Replace the Hero placeholder in `src/App.jsx` with the real `Hero.jsx` section
+- [X] T017 [US1] Populate `src/content/profile.js` with the real `ProfessionalProfile` content (name, role "Senior Developer / Software Architect", specialization "System Analysis & Maintenance", tagline), matching data-model.md's field shape
+- [X] T018 [P] [US1] Build `src/sections/Hero.jsx` rendering the profile content from `src/content/profile.js`, styled with Tailwind so it's fully visible without scrolling (FR-001)
+- [X] T019 [US1] Add a visually prominent call-to-action in `Hero.jsx` linking to the Contact section (FR-007)
+- [X] T020 [US1] Apply an entrance animation to `Hero.jsx` using CSS transitions per research.md (no animation library dependency)
+- [X] T021 [US1] Replace the Hero placeholder in `src/App.jsx` with the real `Hero.jsx` section
 
 **Checkpoint**: User Story 1 is fully functional and independently testable/demoable.
 
