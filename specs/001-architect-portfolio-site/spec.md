@@ -100,7 +100,7 @@ A prospective client who has decided this professional is a good fit wants to re
 
 ## Assumptions
 
-- The page represents a single individual's personal/professional brand ("my company"); no separate registered company name, logo, or existing visual identity was provided, so placeholder branding (the professional's own name) will be used until real brand assets are supplied.
+- The page leads with the company brand "KS Software Solutions" (confirmed) rather than the individual's personal name, which does not appear on the page; no logo or other visual identity beyond the name and the existing "KS" mark has been provided, so those remain placeholder until supplied.
 - Content is authored and maintained by the professional directly (e.g., via code changes and redeploys); no content-management system or admin interface is required for this version.
 - The page is single-language (English) for this version; multi-language support is out of scope unless specified later.
 - No visitor accounts, authentication, or personalization are required; the page is public and the same for all visitors.
