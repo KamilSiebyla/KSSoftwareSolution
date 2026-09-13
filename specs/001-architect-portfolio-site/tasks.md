@@ -23,14 +23,14 @@ description: "Task list template for feature implementation"
 
 **Purpose**: Project initialization and basic tooling
 
-- [ ] T001 Initialize the Vite + React project at the repository root (`package.json`, `vite.config.js`, `index.html`, `src/main.jsx`, `src/App.jsx` scaffolds) per plan.md Project Structure
-- [ ] T002 [P] Install and configure Tailwind CSS: `tailwind.config.js`, `postcss.config.js`, and `src/styles/index.css` with the `@tailwind` directives
-- [ ] T003 [P] Configure ESLint + Prettier (`.eslintrc`, `.prettierrc`) with zero-warnings-allowed enforced, per the constitution's Code Quality principle
-- [ ] T004 [P] Install and configure Vitest + React Testing Library + `jest-dom` (test config in `vite.config.js` or `vitest.config.js`), per research.md's testing-stack decision
-- [ ] T005 [P] Install `lucide-react` and the self-hosted `@fontsource` accent heading font package, per research.md's icon and typography decisions
-- [ ] T006 Create `.github/workflows/ci.yml` running `npm ci`, `npm run lint`, `npm test`, and `npm run build` on pull requests targeting `development` and `main`, per plan.md's Branching & Release Strategy
-- [ ] T007 [P] Create `CONTRIBUTING.md` documenting the `feature/<name>` → `development` → `main` branch flow, PR review requirement, and required branch-protection settings for `main` and `development`, per plan.md's Branching & Release Strategy
-- [ ] T008 [P] Create `docs/deployment.md` documenting the Netlify setup: production site deploying from `main`, staging site deploying from `development`, and deploy previews from `feature/*` pull requests, per plan.md's deployment mapping
+- [X] T001 Initialize the Vite + React project at the repository root (`package.json`, `vite.config.js`, `index.html`, `src/main.jsx`, `src/App.jsx` scaffolds) per plan.md Project Structure
+- [X] T002 [P] Install and configure Tailwind CSS: `tailwind.config.js`, `postcss.config.js`, and `src/styles/index.css` with the `@tailwind` directives
+- [X] T003 [P] Configure ESLint + Prettier (`.eslintrc`, `.prettierrc`) with zero-warnings-allowed enforced, per the constitution's Code Quality principle
+- [X] T004 [P] Install and configure Vitest + React Testing Library + `jest-dom` (test config in `vite.config.js` or `vitest.config.js`), per research.md's testing-stack decision
+- [X] T005 [P] Install `lucide-react` and the self-hosted `@fontsource` accent heading font package, per research.md's icon and typography decisions
+- [X] T006 Create `.github/workflows/ci.yml` running `npm ci`, `npm run lint`, `npm test`, and `npm run build` on pull requests targeting `development` and `main`, per plan.md's Branching & Release Strategy
+- [X] T007 [P] Create `CONTRIBUTING.md` documenting the `feature/<name>` → `development` → `main` branch flow, PR review requirement, and required branch-protection settings for `main` and `development`, per plan.md's Branching & Release Strategy
+- [X] T008 [P] Create `docs/deployment.md` documenting the Netlify setup: production site deploying from `main`, staging site deploying from `development`, and deploy previews from `feature/*` pull requests, per plan.md's deployment mapping
 
 ---
 
@@ -40,12 +40,12 @@ description: "Task list template for feature implementation"
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T009 Build the app shell: `index.html` with `<div id="root">` and a `<noscript>` fallback containing the core introduction text and a `mailto:` link (per plan.md Constraints/edge case), and `src/main.jsx` mounting `<App />`
-- [ ] T010 Create `src/App.jsx` as the top-level layout that renders page sections in order (Hero, Expertise, Contact), initially with placeholder section components
-- [ ] T011 [P] Create `src/content/` module skeleton with the three content shapes from data-model.md (`profile.js`, `expertise.js`, `contactChannels.js`), each exporting an empty/placeholder value matching the documented field shape
-- [ ] T012 [P] Build shared UI components in `src/components/` (`Button.jsx`, `SectionHeading.jsx`, `Icon.jsx` wrapping `lucide-react`) reused across sections, per the constitution's UX Consistency principle
-- [ ] T013 [P] Implement the `useInView` `IntersectionObserver` hook in `src/hooks/useInView.js`, per research.md's interactivity decision (no animation library)
-- [ ] T014 Build a persistent/sticky `src/components/NavBar.jsx` with a placeholder contact link slot, ensuring a contact channel will be reachable in one interaction from anywhere on the page (FR-004) once populated by User Story 3
+- [X] T009 Build the app shell: `index.html` with `<div id="root">` and a `<noscript>` fallback containing the core introduction text and a `mailto:` link (per plan.md Constraints/edge case), and `src/main.jsx` mounting `<App />`
+- [X] T010 Create `src/App.jsx` as the top-level layout that renders page sections in order (Hero, Expertise, Contact), initially with placeholder section components
+- [X] T011 [P] Create `src/content/` module skeleton with the three content shapes from data-model.md (`profile.js`, `expertise.js`, `contactChannels.js`), each exporting an empty/placeholder value matching the documented field shape
+- [X] T012 [P] Build shared UI components in `src/components/` (`Button.jsx`, `SectionHeading.jsx`, `Icon.jsx` wrapping `lucide-react`) reused across sections, per the constitution's UX Consistency principle
+- [X] T013 [P] Implement the `useInView` `IntersectionObserver` hook in `src/hooks/useInView.js`, per research.md's interactivity decision (no animation library)
+- [X] T014 Build a persistent/sticky `src/components/NavBar.jsx` with a placeholder contact link slot, ensuring a contact channel will be reachable in one interaction from anywhere on the page (FR-004) once populated by User Story 3
 
 **Checkpoint**: Foundation ready — user story implementation can now begin
 
@@ -59,16 +59,16 @@ description: "Task list template for feature implementation"
 
 ### Tests for User Story 1
 
-- [ ] T015 [P] [US1] Unit test in `tests/unit/content.profile.test.js` asserting the `ProfessionalProfile` object's `name`, `role`, `specialization`, and `tagline` fields are non-empty strings, per data-model.md's validation rule for this entity
-- [ ] T016 [P] [US1] Component test in `tests/unit/Hero.test.jsx` asserting the Hero section renders the profile's name, role, and specialization on initial render (no scroll/interaction required) and renders a call-to-action element
+- [X] T015 [P] [US1] Unit test in `tests/unit/content.profile.test.js` asserting the `ProfessionalProfile` object's `name`, `role`, `specialization`, and `tagline` fields are non-empty strings, per data-model.md's validation rule for this entity
+- [X] T016 [P] [US1] Component test in `tests/unit/Hero.test.jsx` asserting the Hero section renders the profile's name, role, and specialization on initial render (no scroll/interaction required) and renders a call-to-action element
 
 ### Implementation for User Story 1
 
-- [ ] T017 [US1] Populate `src/content/profile.js` with the real `ProfessionalProfile` content (name, role "Senior Developer / Software Architect", specialization "System Analysis & Maintenance", tagline), matching data-model.md's field shape
-- [ ] T018 [P] [US1] Build `src/sections/Hero.jsx` rendering the profile content from `src/content/profile.js`, styled with Tailwind so it's fully visible without scrolling (FR-001)
-- [ ] T019 [US1] Add a visually prominent call-to-action in `Hero.jsx` linking to the Contact section (FR-007)
-- [ ] T020 [US1] Apply an entrance animation to `Hero.jsx` using CSS transitions per research.md (no animation library dependency)
-- [ ] T021 [US1] Replace the Hero placeholder in `src/App.jsx` with the real `Hero.jsx` section
+- [X] T017 [US1] Populate `src/content/profile.js` with the real `ProfessionalProfile` content (name, role "Senior Developer / Software Architect", specialization "System Analysis & Maintenance", tagline), matching data-model.md's field shape
+- [X] T018 [P] [US1] Build `src/sections/Hero.jsx` rendering the profile content from `src/content/profile.js`, styled with Tailwind so it's fully visible without scrolling (FR-001)
+- [X] T019 [US1] Add a visually prominent call-to-action in `Hero.jsx` linking to the Contact section (FR-007)
+- [X] T020 [US1] Apply an entrance animation to `Hero.jsx` using CSS transitions per research.md (no animation library dependency)
+- [X] T021 [US1] Replace the Hero placeholder in `src/App.jsx` with the real `Hero.jsx` section
 
 **Checkpoint**: User Story 1 is fully functional and independently testable/demoable.
 
@@ -82,16 +82,16 @@ description: "Task list template for feature implementation"
 
 ### Tests for User Story 3
 
-- [ ] T022 [P] [US3] Unit test in `tests/unit/content.contact.test.js` constructing the derived `href` for each `ContactChannel` fixture and asserting the correct scheme (`mailto:`/`tel:`/`https:`), per data-model.md's validation rule for this entity
-- [ ] T023 [P] [US3] Integration test in `tests/integration/contact-reachable.test.jsx` asserting at least one contact channel link is present and reachable via the persistent `NavBar` regardless of scroll position (FR-004)
+- [X] T022 [P] [US3] Unit test in `tests/unit/content.contact.test.js` constructing the derived `href` for each `ContactChannel` fixture and asserting the correct scheme (`mailto:`/`tel:`/`https:`), per data-model.md's validation rule for this entity
+- [X] T023 [P] [US3] Integration test in `tests/integration/contact-reachable.test.jsx` asserting at least one contact channel link is present and reachable via the persistent `NavBar` regardless of scroll position (FR-004)
 
 ### Implementation for User Story 3
 
-- [ ] T024 [US3] Populate `src/content/contactChannels.js` with real `ContactChannel` entries (email required per data-model.md's validation rule; optionally phone and/or LinkedIn), each with a correctly derived `href`
-- [ ] T025 [P] [US3] Build `src/sections/Contact.jsx` rendering each `ContactChannel` as an icon + label link with the correct `mailto:`/`tel:`/external `href` (FR-008, FR-009)
-- [ ] T026 [US3] Surface at least one `ContactChannel` link in the `NavBar` placeholder slot built in T014, so it's reachable in one interaction from anywhere on the page (FR-004, SC-003)
-- [ ] T027 [US3] Add visible keyboard-focus styles and `aria-label`s to all contact links across `Contact.jsx` and `NavBar.jsx` (FR-010)
-- [ ] T028 [US3] Replace the Contact placeholder in `src/App.jsx` with the real `Contact.jsx` section
+- [X] T024 [US3] Populate `src/content/contactChannels.js` with real `ContactChannel` entries (email required per data-model.md's validation rule; optionally phone and/or LinkedIn), each with a correctly derived `href`
+- [X] T025 [P] [US3] Build `src/sections/Contact.jsx` rendering each `ContactChannel` as an icon + label link with the correct `mailto:`/`tel:`/external `href` (FR-008, FR-009)
+- [X] T026 [US3] Surface at least one `ContactChannel` link in the `NavBar` placeholder slot built in T014, so it's reachable in one interaction from anywhere on the page (FR-004, SC-003)
+- [X] T027 [US3] Add visible keyboard-focus styles and `aria-label`s to all contact links across `Contact.jsx` and `NavBar.jsx` (FR-010)
+- [X] T028 [US3] Replace the Contact placeholder in `src/App.jsx` with the real `Contact.jsx` section
 
 **Checkpoint**: User Stories 1 and 3 (both P1) are independently functional — this is the recommended MVP cutoff.
 
@@ -105,16 +105,16 @@ description: "Task list template for feature implementation"
 
 ### Tests for User Story 2
 
-- [ ] T029 [P] [US2] Unit test in `tests/unit/content.expertise.test.js` asserting at least one `ExpertiseItem` exists and each has non-empty `title` and `description`, per data-model.md's validation rule for this entity
-- [ ] T030 [P] [US2] Component test in `tests/unit/Expertise.test.jsx` asserting the Expertise section renders every `ExpertiseItem`'s title and description
+- [X] T029 [P] [US2] Unit test in `tests/unit/content.expertise.test.js` asserting at least one `ExpertiseItem` exists and each has non-empty `title` and `description`, per data-model.md's validation rule for this entity
+- [X] T030 [P] [US2] Component test in `tests/unit/Expertise.test.jsx` asserting the Expertise section renders every `ExpertiseItem`'s title and description
 
 ### Implementation for User Story 2
 
-- [ ] T031 [US2] Populate `src/content/expertise.js` with concrete, specific `ExpertiseItem` entries about system analysis and maintenance (not generic filler), per the spec's explicit requirement
-- [ ] T032 [P] [US2] Build `src/sections/Expertise.jsx` rendering the `ExpertiseItem` list with `lucide-react` icons and Tailwind card/list styling
-- [ ] T033 [US2] Apply scroll-reveal animation to `Expertise.jsx` list items using the `useInView` hook from T013
-- [ ] T034 [US2] Verify and adjust `Expertise.jsx` responsive layout at mobile width (375px) so no horizontal scrolling occurs (spec acceptance scenario)
-- [ ] T035 [US2] Replace the Expertise placeholder in `src/App.jsx` with the real `Expertise.jsx` section, positioned between Hero and Contact
+- [X] T031 [US2] Populate `src/content/expertise.js` with concrete, specific `ExpertiseItem` entries about system analysis and maintenance (not generic filler), per the spec's explicit requirement
+- [X] T032 [P] [US2] Build `src/sections/Expertise.jsx` rendering the `ExpertiseItem` list with `lucide-react` icons and Tailwind card/list styling
+- [X] T033 [US2] Apply scroll-reveal animation to `Expertise.jsx` list items using the `useInView` hook from T013
+- [X] T034 [US2] Verify and adjust `Expertise.jsx` responsive layout at mobile width (375px) so no horizontal scrolling occurs (spec acceptance scenario)
+- [X] T035 [US2] Replace the Expertise placeholder in `src/App.jsx` with the real `Expertise.jsx` section, positioned between Hero and Contact
 
 **Checkpoint**: All three user stories are independently functional.
 
@@ -124,12 +124,12 @@ description: "Task list template for feature implementation"
 
 **Purpose**: Verification and release readiness spanning all stories
 
-- [ ] T036 [P] Run a Lighthouse audit against the `npm run preview` build and address any finding below a Performance score of 90 (spec SC-002, plan.md Performance Goals)
-- [ ] T037 [P] Perform a full keyboard-only navigation pass across the entire page (nav, Hero CTA, Expertise, Contact) and fix any element that isn't reachable/operable (FR-010)
-- [ ] T038 [P] Verify the `<noscript>` fallback in `index.html` (T009) renders the core introduction and a working `mailto:` link with JavaScript disabled
-- [ ] T039 Run `npm run lint`, `npm test`, and `npm run build` locally and confirm all three succeed, matching the CI Quality Gates (T006)
-- [ ] T040 Execute the full [quickstart.md](./quickstart.md) validation guide end-to-end against the production build
-- [ ] T041 Open a pull request from `feature/architect-portfolio-site` into `development`; after merge and staging verification, open the release pull request from `development` into `main` (plan.md Branching & Release Strategy)
+- [X] T036 [P] Run a Lighthouse audit against the `npm run preview` build and address any finding below a Performance score of 90 (spec SC-002, plan.md Performance Goals)
+- [X] T037 [P] Perform a full keyboard-only navigation pass across the entire page (nav, Hero CTA, Expertise, Contact) and fix any element that isn't reachable/operable (FR-010)
+- [X] T038 [P] Verify the `<noscript>` fallback in `index.html` (T009) renders the core introduction and a working `mailto:` link with JavaScript disabled
+- [X] T039 Run `npm run lint`, `npm test`, and `npm run build` locally and confirm all three succeed, matching the CI Quality Gates (T006)
+- [X] T040 Execute the full [quickstart.md](./quickstart.md) validation guide end-to-end against the production build
+- [X] T041 Open a pull request from `feature/architect-portfolio-site` into `development`; after merge and staging verification, open the release pull request from `development` into `main` (plan.md Branching & Release Strategy) — feature PRs #1, #2, #3, and the polish PR #4 all opened and merged; release PR `development` → `main` opened as #5
 
 ---
 
