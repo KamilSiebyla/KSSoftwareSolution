@@ -1,8 +1,8 @@
 # Architect Portfolio Frontpage
 
-A single-page portfolio site presenting Kamil Siebyła as a senior developer/architect
-specializing in **system analysis and maintenance**, built to attract and convert prospective
-clients. Built with React, Vite, and Tailwind CSS; deployed as a fully static site.
+A single-page frontpage for **KS Software Solutions**, a software development and systems
+consultancy specializing in **system analysis and maintenance**, built to attract and convert
+prospective clients. Built with React, Vite, and Tailwind CSS; deployed as a fully static site.
 
 Full spec-driven development history (spec, plan, research, and task breakdown) lives in
 [`specs/001-architect-portfolio-site/`](specs/001-architect-portfolio-site/).
@@ -81,9 +81,6 @@ Tailwind stylesheet being technically "render-blocking" (~150 ms), immaterial at
 - **5 `npm audit` findings**, all in dev-only tooling (Vite's dev server, Vitest's mocker) — they
   do not affect the production build/runtime. Fixing them requires a major-version jump (Vite 8,
   Vitest 5) beyond what this plan called for; left as a deliberate follow-up.
-- **Placeholder profile content** — name, role, and tagline in `src/content/profile.js` and the
-  email in `src/content/contactChannels.js` were filled in with reasonable defaults where no real
-  content was provided; review and adjust as needed.
 - GitHub branch protection on `main`/`development` (documented in `CONTRIBUTING.md`) has not
   actually been configured yet in the repository's settings.
 
