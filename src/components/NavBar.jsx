@@ -26,7 +26,13 @@ export default function NavBar() {
           </a>
         </div>
         {primaryChannel ? (
-          <Button as="a" href={toHref(primaryChannel)} variant="primary" className="px-4 py-2 text-sm">
+          <Button
+            as="a"
+            href={toHref(primaryChannel)}
+            aria-label={primaryChannel.label}
+            variant="primary"
+            className="px-4 py-2 text-sm"
+          >
             <Icon icon={ICONS_BY_TYPE[primaryChannel.type] ?? Mail} size={16} />
             {primaryChannel.label}
           </Button>
