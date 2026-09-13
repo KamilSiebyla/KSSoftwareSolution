@@ -111,6 +111,43 @@ flat single-project layout instead, with `src/content/` separating the actual pr
 contact copy from the presentational components so the professional can update content without
 touching component code (still without needing a full CMS, per spec Assumptions).
 
+## Branching & Release Strategy
+
+This project uses a three-tier branch model instead of merging feature work directly to `main`:
+
+- **`feature/<feature-name>`** — one branch per feature (e.g. `feature/architect-portfolio-site`),
+  branched off `development`. All implementation work for a feature happens here.
+- **`development`** — integration branch. Every feature branch is merged into `development` via a
+  reviewed pull request once its user stories are complete and its Quality Gates (lint + full test
+  suite) pass. `development` always reflects the next candidate release.
+- **`main`** — production branch. When a release is ready, `development` is merged into `main` via
+  a pull request; code on `main` is what actually reaches production. `main` is never committed to
+  directly and never receives a feature branch straight — it only ever receives merges from
+  `development`.
+
+```text
+feature/<feature-name>  --PR-->  development  --PR (release)-->  main  --> production
+```
+
+This maps onto the constitution's Development Workflow principle (PR review + passing Quality
+Gates required before merge) at **every** arrow above, not just the final one — a feature branch
+merging into `development` and `development` merging into `main` both go through review and CI,
+not just direct-to-`main` changes.
+
+**Deployment mapping** (extends the Netlify hosting decision in research.md):
+- Pushes/PRs to `feature/*` branches get Netlify **deploy previews** (a temporary URL per PR) for
+  review, per research.md's existing PR-preview rationale.
+- The `development` branch is connected to a **staging** Netlify site, so the integration branch
+  is always viewable at a stable staging URL before a release is cut.
+- The `main` branch is connected to the **production** Netlify site — merging `development` into
+  `main` is what actually publishes the release.
+- The CI workflow (`.github/workflows/ci.yml`) runs the same lint + test Quality Gates on pull
+  requests targeting either `development` or `main`.
+
+`main` and `development` should both be configured with branch protection (no direct pushes,
+required passing status checks, required review) — tracked as a setup task in tasks.md rather than
+a code artifact.
+
 ## Complexity Tracking
 
 *No Constitution Check violations — table intentionally left empty.*
