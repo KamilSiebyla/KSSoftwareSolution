@@ -105,16 +105,16 @@ description: "Task list template for feature implementation"
 
 ### Tests for User Story 2
 
-- [ ] T029 [P] [US2] Unit test in `tests/unit/content.expertise.test.js` asserting at least one `ExpertiseItem` exists and each has non-empty `title` and `description`, per data-model.md's validation rule for this entity
-- [ ] T030 [P] [US2] Component test in `tests/unit/Expertise.test.jsx` asserting the Expertise section renders every `ExpertiseItem`'s title and description
+- [X] T029 [P] [US2] Unit test in `tests/unit/content.expertise.test.js` asserting at least one `ExpertiseItem` exists and each has non-empty `title` and `description`, per data-model.md's validation rule for this entity
+- [X] T030 [P] [US2] Component test in `tests/unit/Expertise.test.jsx` asserting the Expertise section renders every `ExpertiseItem`'s title and description
 
 ### Implementation for User Story 2
 
-- [ ] T031 [US2] Populate `src/content/expertise.js` with concrete, specific `ExpertiseItem` entries about system analysis and maintenance (not generic filler), per the spec's explicit requirement
-- [ ] T032 [P] [US2] Build `src/sections/Expertise.jsx` rendering the `ExpertiseItem` list with `lucide-react` icons and Tailwind card/list styling
-- [ ] T033 [US2] Apply scroll-reveal animation to `Expertise.jsx` list items using the `useInView` hook from T013
-- [ ] T034 [US2] Verify and adjust `Expertise.jsx` responsive layout at mobile width (375px) so no horizontal scrolling occurs (spec acceptance scenario)
-- [ ] T035 [US2] Replace the Expertise placeholder in `src/App.jsx` with the real `Expertise.jsx` section, positioned between Hero and Contact
+- [X] T031 [US2] Populate `src/content/expertise.js` with concrete, specific `ExpertiseItem` entries about system analysis and maintenance (not generic filler), per the spec's explicit requirement
+- [X] T032 [P] [US2] Build `src/sections/Expertise.jsx` rendering the `ExpertiseItem` list with `lucide-react` icons and Tailwind card/list styling
+- [X] T033 [US2] Apply scroll-reveal animation to `Expertise.jsx` list items using the `useInView` hook from T013
+- [X] T034 [US2] Verify and adjust `Expertise.jsx` responsive layout at mobile width (375px) so no horizontal scrolling occurs (spec acceptance scenario)
+- [X] T035 [US2] Replace the Expertise placeholder in `src/App.jsx` with the real `Expertise.jsx` section, positioned between Hero and Contact
 
 **Checkpoint**: All three user stories are independently functional.
 
