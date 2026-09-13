@@ -124,12 +124,12 @@ description: "Task list template for feature implementation"
 
 **Purpose**: Verification and release readiness spanning all stories
 
-- [ ] T036 [P] Run a Lighthouse audit against the `npm run preview` build and address any finding below a Performance score of 90 (spec SC-002, plan.md Performance Goals)
-- [ ] T037 [P] Perform a full keyboard-only navigation pass across the entire page (nav, Hero CTA, Expertise, Contact) and fix any element that isn't reachable/operable (FR-010)
-- [ ] T038 [P] Verify the `<noscript>` fallback in `index.html` (T009) renders the core introduction and a working `mailto:` link with JavaScript disabled
-- [ ] T039 Run `npm run lint`, `npm test`, and `npm run build` locally and confirm all three succeed, matching the CI Quality Gates (T006)
-- [ ] T040 Execute the full [quickstart.md](./quickstart.md) validation guide end-to-end against the production build
-- [ ] T041 Open a pull request from `feature/architect-portfolio-site` into `development`; after merge and staging verification, open the release pull request from `development` into `main` (plan.md Branching & Release Strategy)
+- [X] T036 [P] Run a Lighthouse audit against the `npm run preview` build and address any finding below a Performance score of 90 (spec SC-002, plan.md Performance Goals)
+- [X] T037 [P] Perform a full keyboard-only navigation pass across the entire page (nav, Hero CTA, Expertise, Contact) and fix any element that isn't reachable/operable (FR-010)
+- [X] T038 [P] Verify the `<noscript>` fallback in `index.html` (T009) renders the core introduction and a working `mailto:` link with JavaScript disabled
+- [X] T039 Run `npm run lint`, `npm test`, and `npm run build` locally and confirm all three succeed, matching the CI Quality Gates (T006)
+- [X] T040 Execute the full [quickstart.md](./quickstart.md) validation guide end-to-end against the production build
+- [ ] T041 Open a pull request from `feature/architect-portfolio-site` into `development`; after merge and staging verification, open the release pull request from `development` into `main` (plan.md Branching & Release Strategy) — feature PRs (#1, #2, #3) opened and merged; the polish PR and the `development` → `main` release PR are still pending
 
 ---
 
