@@ -16,5 +16,14 @@ export const contactChannels = [
     label: 'Email',
     type: 'email',
     value: 'kamil.siebyla@gmail.com',
+    icon: 'Mail',
+  },
+  {
+    // TODO: replace with the real LinkedIn profile URL once available.
+    id: 'linkedin',
+    label: 'LinkedIn',
+    type: 'external',
+    value: '#',
+    icon: 'Linkedin',
   },
 ];

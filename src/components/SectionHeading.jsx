@@ -1,6 +1,6 @@
 export default function SectionHeading({ eyebrow, title, className = '' }) {
   return (
-    <div className={`mb-10 ${className}`}>
+    <div className={`mb-8 ${className}`}>
       {eyebrow ? (
         <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-accent">{eyebrow}</p>
       ) : null}

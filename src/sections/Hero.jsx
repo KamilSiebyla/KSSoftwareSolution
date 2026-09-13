@@ -19,6 +19,8 @@ export default function Hero() {
       className="relative flex min-h-[calc(100vh-5rem)] flex-col justify-center gap-6 overflow-hidden px-6 py-16 sm:px-10"
     >
       <AnimatedBackground />
+    <section id="hero" className="flex flex-col justify-center gap-6 px-6 py-14 sm:px-10 sm:py-20">
+
       <div
         className={`relative z-10 max-w-3xl transition-all duration-700 ease-out ${
           mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
