@@ -9,7 +9,7 @@ const ICONS_BY_NAME = { Mail, Phone, Linkedin };
 // channel (FR-008/FR-009) — no form, nothing captured or stored.
 export default function Contact() {
   return (
-    <section id="contact" className="px-6 py-24 sm:px-10">
+    <section id="contact" className="px-6 py-14 sm:px-10 sm:py-20">
       <div className="mx-auto max-w-3xl text-center">
         <SectionHeading eyebrow="Get in touch" title="Let's talk about your system" />
         <p className="mb-10 text-white/70">

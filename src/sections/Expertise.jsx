@@ -27,7 +27,7 @@ function ExpertiseCard({ item }) {
 // concrete expertise content (FR-002), not generic filler.
 export default function Expertise() {
   return (
-    <section id="expertise" className="px-6 py-24 sm:px-10">
+    <section id="expertise" className="px-6 py-14 sm:px-10 sm:py-20">
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Expertise"
