@@ -1,5 +1,4 @@
 // ContactChannel[] content, per specs/001-architect-portfolio-site/data-model.md.
-// Populated by the "Contact channels" feature branch (User Story 3).
 
 /**
  * Derives the correct href for a contact channel from its type + value.
@@ -11,4 +10,11 @@ export function toHref({ type, value }) {
   return value;
 }
 
-export const contactChannels = [];
+export const contactChannels = [
+  {
+    id: 'email',
+    label: 'Email',
+    type: 'email',
+    value: 'kamil.siebyla@gmail.com',
+  },
+];

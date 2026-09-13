@@ -82,16 +82,16 @@ description: "Task list template for feature implementation"
 
 ### Tests for User Story 3
 
-- [ ] T022 [P] [US3] Unit test in `tests/unit/content.contact.test.js` constructing the derived `href` for each `ContactChannel` fixture and asserting the correct scheme (`mailto:`/`tel:`/`https:`), per data-model.md's validation rule for this entity
-- [ ] T023 [P] [US3] Integration test in `tests/integration/contact-reachable.test.jsx` asserting at least one contact channel link is present and reachable via the persistent `NavBar` regardless of scroll position (FR-004)
+- [X] T022 [P] [US3] Unit test in `tests/unit/content.contact.test.js` constructing the derived `href` for each `ContactChannel` fixture and asserting the correct scheme (`mailto:`/`tel:`/`https:`), per data-model.md's validation rule for this entity
+- [X] T023 [P] [US3] Integration test in `tests/integration/contact-reachable.test.jsx` asserting at least one contact channel link is present and reachable via the persistent `NavBar` regardless of scroll position (FR-004)
 
 ### Implementation for User Story 3
 
-- [ ] T024 [US3] Populate `src/content/contactChannels.js` with real `ContactChannel` entries (email required per data-model.md's validation rule; optionally phone and/or LinkedIn), each with a correctly derived `href`
-- [ ] T025 [P] [US3] Build `src/sections/Contact.jsx` rendering each `ContactChannel` as an icon + label link with the correct `mailto:`/`tel:`/external `href` (FR-008, FR-009)
-- [ ] T026 [US3] Surface at least one `ContactChannel` link in the `NavBar` placeholder slot built in T014, so it's reachable in one interaction from anywhere on the page (FR-004, SC-003)
-- [ ] T027 [US3] Add visible keyboard-focus styles and `aria-label`s to all contact links across `Contact.jsx` and `NavBar.jsx` (FR-010)
-- [ ] T028 [US3] Replace the Contact placeholder in `src/App.jsx` with the real `Contact.jsx` section
+- [X] T024 [US3] Populate `src/content/contactChannels.js` with real `ContactChannel` entries (email required per data-model.md's validation rule; optionally phone and/or LinkedIn), each with a correctly derived `href`
+- [X] T025 [P] [US3] Build `src/sections/Contact.jsx` rendering each `ContactChannel` as an icon + label link with the correct `mailto:`/`tel:`/external `href` (FR-008, FR-009)
+- [X] T026 [US3] Surface at least one `ContactChannel` link in the `NavBar` placeholder slot built in T014, so it's reachable in one interaction from anywhere on the page (FR-004, SC-003)
+- [X] T027 [US3] Add visible keyboard-focus styles and `aria-label`s to all contact links across `Contact.jsx` and `NavBar.jsx` (FR-010)
+- [X] T028 [US3] Replace the Contact placeholder in `src/App.jsx` with the real `Contact.jsx` section
 
 **Checkpoint**: User Stories 1 and 3 (both P1) are independently functional — this is the recommended MVP cutoff.
 
