@@ -15,7 +15,11 @@ export default function NavBar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-ink/80 backdrop-blur border-b border-white/10">
       <nav className="mx-auto flex max-w-5xl items-center justify-between px-6 py-4">
-        <a href="#top" className="font-display text-lg font-bold tracking-tight">
+        <a
+          href="#top"
+          aria-label="KS Software Solutions — back to top"
+          className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-accent via-fuchsia-500 to-violet-600 font-display text-sm font-bold text-ink shadow-lg shadow-accent/20"
+        >
           KS
         </a>
         <div className="hidden items-center gap-6 text-sm font-medium sm:flex">
