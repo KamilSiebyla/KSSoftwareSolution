@@ -1,4 +1,5 @@
 import NavBar from './components/NavBar.jsx';
+import Expertise from './sections/Expertise.jsx';
 import Contact from './sections/Contact.jsx';
 import Hero from './sections/Hero.jsx';
 
@@ -9,6 +10,9 @@ export default function App() {
     <div id="top">
       <NavBar />
       <main className="pt-20">
+        {/* Hero section lands here */}
+        <Expertise />
+        {/* Contact section lands here */}
         {/* Hero and Expertise sections land here */}
         <Contact />
         <Hero />
