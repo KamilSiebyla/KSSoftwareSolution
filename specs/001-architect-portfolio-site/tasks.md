@@ -129,7 +129,7 @@ description: "Task list template for feature implementation"
 - [X] T038 [P] Verify the `<noscript>` fallback in `index.html` (T009) renders the core introduction and a working `mailto:` link with JavaScript disabled
 - [X] T039 Run `npm run lint`, `npm test`, and `npm run build` locally and confirm all three succeed, matching the CI Quality Gates (T006)
 - [X] T040 Execute the full [quickstart.md](./quickstart.md) validation guide end-to-end against the production build
-- [ ] T041 Open a pull request from `feature/architect-portfolio-site` into `development`; after merge and staging verification, open the release pull request from `development` into `main` (plan.md Branching & Release Strategy) — feature PRs (#1, #2, #3) opened and merged; the polish PR and the `development` → `main` release PR are still pending
+- [X] T041 Open a pull request from `feature/architect-portfolio-site` into `development`; after merge and staging verification, open the release pull request from `development` into `main` (plan.md Branching & Release Strategy) — feature PRs #1, #2, #3, and the polish PR #4 all opened and merged; release PR `development` → `main` opened as #5
 
 ---
 
