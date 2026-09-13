@@ -23,14 +23,14 @@ description: "Task list template for feature implementation"
 
 **Purpose**: Project initialization and basic tooling
 
-- [ ] T001 Initialize the Vite + React project at the repository root (`package.json`, `vite.config.js`, `index.html`, `src/main.jsx`, `src/App.jsx` scaffolds) per plan.md Project Structure
-- [ ] T002 [P] Install and configure Tailwind CSS: `tailwind.config.js`, `postcss.config.js`, and `src/styles/index.css` with the `@tailwind` directives
-- [ ] T003 [P] Configure ESLint + Prettier (`.eslintrc`, `.prettierrc`) with zero-warnings-allowed enforced, per the constitution's Code Quality principle
-- [ ] T004 [P] Install and configure Vitest + React Testing Library + `jest-dom` (test config in `vite.config.js` or `vitest.config.js`), per research.md's testing-stack decision
-- [ ] T005 [P] Install `lucide-react` and the self-hosted `@fontsource` accent heading font package, per research.md's icon and typography decisions
-- [ ] T006 Create `.github/workflows/ci.yml` running `npm ci`, `npm run lint`, `npm test`, and `npm run build` on pull requests targeting `development` and `main`, per plan.md's Branching & Release Strategy
-- [ ] T007 [P] Create `CONTRIBUTING.md` documenting the `feature/<name>` → `development` → `main` branch flow, PR review requirement, and required branch-protection settings for `main` and `development`, per plan.md's Branching & Release Strategy
-- [ ] T008 [P] Create `docs/deployment.md` documenting the Netlify setup: production site deploying from `main`, staging site deploying from `development`, and deploy previews from `feature/*` pull requests, per plan.md's deployment mapping
+- [X] T001 Initialize the Vite + React project at the repository root (`package.json`, `vite.config.js`, `index.html`, `src/main.jsx`, `src/App.jsx` scaffolds) per plan.md Project Structure
+- [X] T002 [P] Install and configure Tailwind CSS: `tailwind.config.js`, `postcss.config.js`, and `src/styles/index.css` with the `@tailwind` directives
+- [X] T003 [P] Configure ESLint + Prettier (`.eslintrc`, `.prettierrc`) with zero-warnings-allowed enforced, per the constitution's Code Quality principle
+- [X] T004 [P] Install and configure Vitest + React Testing Library + `jest-dom` (test config in `vite.config.js` or `vitest.config.js`), per research.md's testing-stack decision
+- [X] T005 [P] Install `lucide-react` and the self-hosted `@fontsource` accent heading font package, per research.md's icon and typography decisions
+- [X] T006 Create `.github/workflows/ci.yml` running `npm ci`, `npm run lint`, `npm test`, and `npm run build` on pull requests targeting `development` and `main`, per plan.md's Branching & Release Strategy
+- [X] T007 [P] Create `CONTRIBUTING.md` documenting the `feature/<name>` → `development` → `main` branch flow, PR review requirement, and required branch-protection settings for `main` and `development`, per plan.md's Branching & Release Strategy
+- [X] T008 [P] Create `docs/deployment.md` documenting the Netlify setup: production site deploying from `main`, staging site deploying from `development`, and deploy previews from `feature/*` pull requests, per plan.md's deployment mapping
 
 ---
 
@@ -40,12 +40,12 @@ description: "Task list template for feature implementation"
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T009 Build the app shell: `index.html` with `<div id="root">` and a `<noscript>` fallback containing the core introduction text and a `mailto:` link (per plan.md Constraints/edge case), and `src/main.jsx` mounting `<App />`
-- [ ] T010 Create `src/App.jsx` as the top-level layout that renders page sections in order (Hero, Expertise, Contact), initially with placeholder section components
-- [ ] T011 [P] Create `src/content/` module skeleton with the three content shapes from data-model.md (`profile.js`, `expertise.js`, `contactChannels.js`), each exporting an empty/placeholder value matching the documented field shape
-- [ ] T012 [P] Build shared UI components in `src/components/` (`Button.jsx`, `SectionHeading.jsx`, `Icon.jsx` wrapping `lucide-react`) reused across sections, per the constitution's UX Consistency principle
-- [ ] T013 [P] Implement the `useInView` `IntersectionObserver` hook in `src/hooks/useInView.js`, per research.md's interactivity decision (no animation library)
-- [ ] T014 Build a persistent/sticky `src/components/NavBar.jsx` with a placeholder contact link slot, ensuring a contact channel will be reachable in one interaction from anywhere on the page (FR-004) once populated by User Story 3
+- [X] T009 Build the app shell: `index.html` with `<div id="root">` and a `<noscript>` fallback containing the core introduction text and a `mailto:` link (per plan.md Constraints/edge case), and `src/main.jsx` mounting `<App />`
+- [X] T010 Create `src/App.jsx` as the top-level layout that renders page sections in order (Hero, Expertise, Contact), initially with placeholder section components
+- [X] T011 [P] Create `src/content/` module skeleton with the three content shapes from data-model.md (`profile.js`, `expertise.js`, `contactChannels.js`), each exporting an empty/placeholder value matching the documented field shape
+- [X] T012 [P] Build shared UI components in `src/components/` (`Button.jsx`, `SectionHeading.jsx`, `Icon.jsx` wrapping `lucide-react`) reused across sections, per the constitution's UX Consistency principle
+- [X] T013 [P] Implement the `useInView` `IntersectionObserver` hook in `src/hooks/useInView.js`, per research.md's interactivity decision (no animation library)
+- [X] T014 Build a persistent/sticky `src/components/NavBar.jsx` with a placeholder contact link slot, ensuring a contact channel will be reachable in one interaction from anywhere on the page (FR-004) once populated by User Story 3
 
 **Checkpoint**: Foundation ready — user story implementation can now begin
 
