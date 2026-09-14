@@ -17,6 +17,10 @@ Full spec-driven development history (spec, plan, research, and task breakdown) 
   visitor data is ever captured or stored.
 - **Persistent navigation** — a contact channel is reachable in one click from anywhere on the
   page.
+- **Cookie consent, built in advance** — the site sets no cookies and runs no tracking today, but
+  the consent banner/storage/policy page (`/privacy.html`) are already wired up so adding
+  analytics later just means gating the script behind `hasAccepted()` (`src/lib/cookieConsent.js`)
+  rather than retrofitting consent afterward.
 - Fully responsive (mobile → desktop), keyboard-operable, and screen-reader-perceivable.
 - Works with JavaScript disabled via a `<noscript>` fallback containing the core introduction and
   a working email link.
