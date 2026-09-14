@@ -36,6 +36,21 @@ a list of these.
 **Validation rules**: at least one `ExpertiseItem` must exist for the section to render (enforced
 by a unit test); `title` and `description` non-empty.
 
+## ApproachHighlight
+
+Represents one entry in the "How We Work" section, added after initial delivery to describe how
+an engagement runs (data governance and reporting). Same shape as `ExpertiseItem`.
+
+| Field | Type | Required | Notes |
+|---|---|---|---|
+| `id` | string | yes | Stable key for list rendering |
+| `title` | string | yes | e.g. "Data governance, covered", "A clear report, every time" |
+| `description` | string | yes | Concrete description of the practice, not generic filler |
+| `icon` | string (icon name) | no | Maps to a `lucide-react` icon name for visual reinforcement |
+
+**Validation rules**: at least one `ApproachHighlight` must exist for the section to render
+(enforced by a unit test); `title` and `description` non-empty.
+
 ## ContactChannel
 
 Represents one direct, static way to reach the professional (spec FR-008/FR-009, User Story 3).
@@ -57,12 +72,14 @@ and asserts the expected scheme (`mailto:`/`tel:`/`https:`).
 
 ## Relationships
 
-These three content types are independent and unrelated to each other (no foreign keys, no shared
+These content types are independent and unrelated to each other (no foreign keys, no shared
 identifiers) — they are composed together only at the presentation layer: `App.jsx` renders one
-`ProfessionalProfile` in the Hero section, a list of `ExpertiseItem`s in the Expertise section, and
-a list of `ContactChannel`s in the Contact section (and, per FR-004, at least one `ContactChannel`
-surfaced persistently, e.g. in a sticky header/nav, so it's reachable in one interaction from
-anywhere on the page).
+`ProfessionalProfile` in the Hero section, a list of `ExpertiseItem`s in the Expertise section, a
+list of `ApproachHighlight`s in the Approach ("How We Work") section, and a list of
+`ContactChannel`s in the Contact section (and, per FR-004, at least one `ContactChannel` surfaced
+persistently, e.g. in a sticky header/nav, so it's reachable in one interaction from anywhere on
+the page). `ExpertiseItem` and `ApproachHighlight` share a rendering component (`FeatureCard`)
+since they have the same shape and presentation.
 
 ## State Transitions
 
