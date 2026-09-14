@@ -20,7 +20,7 @@ export default function Hero() {
     >
       <AnimatedBackground />
       <div
-        className={`relative z-10 mx-auto max-w-5xl transition-all duration-700 ease-out ${
+        className={`relative z-10 max-w-3xl transition-all duration-700 ease-out ${
           mounted ? 'translate-y-0 opacity-100' : 'translate-y-6 opacity-0'
         }`}
       >
