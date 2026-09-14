@@ -4,6 +4,7 @@ import CookieConsentBanner from './components/CookieConsentBanner.jsx';
 import Footer from './components/Footer.jsx';
 import Hero from './sections/Hero.jsx';
 import Expertise from './sections/Expertise.jsx';
+import Approach from './sections/Approach.jsx';
 import Contact from './sections/Contact.jsx';
 
 export default function App() {
@@ -13,6 +14,7 @@ export default function App() {
       <main className="pt-20">
         <Hero />
         <Expertise />
+        <Approach />
         <Contact />
       </main>
       <Footer />
