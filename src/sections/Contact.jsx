@@ -1,9 +1,7 @@
-import { ExternalLink, Linkedin, Mail, Phone } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading.jsx';
 import Icon from '../components/Icon.jsx';
 import { contactChannels, toHref } from '../content/contactChannels.js';
-
-const ICONS_BY_NAME = { Mail, Phone, Linkedin };
+import { ExternalLink, ICONS_BY_NAME } from '../lib/icons.js';
 
 // User Story 3: a visitor can reach the professional via a direct, static
 // channel (FR-008/FR-009) — no form, nothing captured or stored.

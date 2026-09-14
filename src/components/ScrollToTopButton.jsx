@@ -35,7 +35,7 @@ export default function ScrollToTopButton() {
         visible ? 'translate-y-0 opacity-100' : 'pointer-events-none translate-y-4 opacity-0'
       }`}
     >
-      <span className="absolute inset-0 rounded-full bg-gradient-to-br from-accent via-fuchsia-500 to-violet-600" />
+      <span className="absolute inset-0 rounded-full bg-brand-gradient" />
       <span className="relative flex h-full w-full items-center justify-center rounded-full bg-ink">
         <Icon icon={ArrowUp} size={20} className="text-accent" />
       </span>

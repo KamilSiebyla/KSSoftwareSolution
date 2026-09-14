@@ -20,6 +20,13 @@ export default {
         ink: '#0b1120',
         accent: '#22d3ee',
       },
+      backgroundImage: {
+        // Single source of truth for the accent/fuchsia/violet brand
+        // gradient, used identically by the nav logo, the scroll-to-top
+        // button, and the process-step badges (was three copy-pasted
+        // `bg-gradient-to-br from-accent via-fuchsia-500 to-violet-600`s).
+        'brand-gradient': 'linear-gradient(to bottom right, #22d3ee, #d946ef, #7c3aed)',
+      },
       keyframes: {
         blob: {
           '0%, 100%': { transform: 'translate(0, 0) scale(1)' },

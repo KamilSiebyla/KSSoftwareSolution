@@ -1,9 +1,7 @@
-import { Bug, Compass, Search, Wrench } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading.jsx';
 import FeatureCard from '../components/FeatureCard.jsx';
 import { expertiseItems } from '../content/expertise.js';
-
-const ICONS_BY_NAME = { Search, Wrench, Bug, Compass };
+import { ICONS_BY_NAME } from '../lib/icons.js';
 
 // User Story 2: visitors who scroll past the introduction find specific,
 // concrete expertise content (FR-002), not generic filler.

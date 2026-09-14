@@ -1,10 +1,8 @@
-import { FileText, MessagesSquare, Search, ShieldAlert, Users } from 'lucide-react';
 import SectionHeading from '../components/SectionHeading.jsx';
 import Icon from '../components/Icon.jsx';
 import { useInView } from '../hooks/useInView.js';
 import { processSteps } from '../content/approach.js';
-
-const ICONS_BY_NAME = { Search, ShieldAlert, Users, FileText, MessagesSquare };
+import { ICONS_BY_NAME } from '../lib/icons.js';
 
 function ProcessStep({ step, index, isLast }) {
   const [ref, isInView] = useInView();
@@ -18,7 +16,7 @@ function ProcessStep({ step, index, isLast }) {
         />
       ) : null}
       <div
-        className={`relative z-10 flex h-12 w-12 flex-none items-center justify-center rounded-full bg-gradient-to-br from-accent via-fuchsia-500 to-violet-600 text-ink shadow-lg shadow-accent/20 transition-all duration-700 ease-out ${
+        className={`relative z-10 flex h-12 w-12 flex-none items-center justify-center rounded-full bg-brand-gradient text-ink shadow-lg shadow-accent/20 transition-all duration-700 ease-out ${
           isInView ? 'scale-100 opacity-100' : 'scale-75 opacity-0'
         }`}
         style={{ transitionDelay: `${index * 120}ms` }}

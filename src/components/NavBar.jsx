@@ -1,9 +1,7 @@
-import { Linkedin, Mail, Phone } from 'lucide-react';
 import Icon from './Icon.jsx';
 import Button from './Button.jsx';
 import { contactChannels, toHref } from '../content/contactChannels.js';
-
-const ICONS_BY_NAME = { Mail, Phone, Linkedin };
+import { ICONS_BY_NAME, Linkedin, Mail } from '../lib/icons.js';
 
 // Surfaces one contact channel persistently so it's reachable in a single
 // interaction from anywhere on the page (spec FR-004). Renders nothing until
@@ -18,7 +16,7 @@ export default function NavBar() {
         <a
           href="#top"
           aria-label="KS Software Solutions — back to top"
-          className="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-accent via-fuchsia-500 to-violet-600 font-display text-sm font-bold text-ink shadow-lg shadow-accent/20"
+          className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-gradient font-display text-sm font-bold text-ink shadow-lg shadow-accent/20"
         >
           KS
         </a>
