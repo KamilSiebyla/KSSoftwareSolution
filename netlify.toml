@@ -2,6 +2,14 @@
   command = "npm run build"
   publish = "dist"
 
+# privacy.html is a real static file in the build output, so Netlify serves
+# it directly and skips the catch-all below (which only applies when no
+# static file matches) — listed explicitly so that stays obvious.
+[[redirects]]
+  from = "/privacy.html"
+  to = "/privacy.html"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"

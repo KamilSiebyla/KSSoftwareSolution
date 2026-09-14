@@ -36,6 +36,23 @@ a list of these.
 **Validation rules**: at least one `ExpertiseItem` must exist for the section to render (enforced
 by a unit test); `title` and `description` non-empty.
 
+## ProcessStep
+
+Represents one step in the "How We Work" section's engagement timeline, added after initial
+delivery to walk visitors through how an engagement runs, ending in data governance (step 1) and
+the report deliverable (step 4). Unlike `ExpertiseItem`, **array order is meaningful** — steps
+render as a numbered, sequential timeline, not an unordered grid.
+
+| Field | Type | Required | Notes |
+|---|---|---|---|
+| `id` | string | yes | Stable key for list rendering |
+| `title` | string | yes | e.g. "Discovery & Codebase Audit", "Documentation & Report" |
+| `description` | string | yes | Concrete description of that step, not generic filler |
+| `icon` | string (icon name) | no | Maps to a `lucide-react` icon name for visual reinforcement |
+
+**Validation rules**: more than one `ProcessStep` must exist (it's a process, singular steps don't
+render as a timeline) — enforced by a unit test; `title` and `description` non-empty.
+
 ## ContactChannel
 
 Represents one direct, static way to reach the professional (spec FR-008/FR-009, User Story 3).
@@ -57,12 +74,13 @@ and asserts the expected scheme (`mailto:`/`tel:`/`https:`).
 
 ## Relationships
 
-These three content types are independent and unrelated to each other (no foreign keys, no shared
+These content types are independent and unrelated to each other (no foreign keys, no shared
 identifiers) — they are composed together only at the presentation layer: `App.jsx` renders one
-`ProfessionalProfile` in the Hero section, a list of `ExpertiseItem`s in the Expertise section, and
-a list of `ContactChannel`s in the Contact section (and, per FR-004, at least one `ContactChannel`
-surfaced persistently, e.g. in a sticky header/nav, so it's reachable in one interaction from
-anywhere on the page).
+`ProfessionalProfile` in the Hero section, a list of `ExpertiseItem`s in the Expertise section, an
+ordered list of `ProcessStep`s as a timeline in the Approach ("How We Work") section, and a list of
+`ContactChannel`s in the Contact section (and, per FR-004, at least one `ContactChannel` surfaced
+persistently, e.g. in a sticky header/nav, so it's reachable in one interaction from anywhere on
+the page).
 
 ## State Transitions
 

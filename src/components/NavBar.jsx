@@ -26,6 +26,9 @@ export default function NavBar() {
           <a href="#expertise" className="hover:text-accent">
             Expertise
           </a>
+          <a href="#approach" className="hover:text-accent">
+            Approach
+          </a>
           <a href="#contact" className="hover:text-accent">
             Contact
           </a>
