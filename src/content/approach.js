@@ -1,18 +1,40 @@
-// ApproachHighlight[] content — describes how an engagement runs, per
-// specs/001-architect-portfolio-site/data-model.md.
-export const approachHighlights = [
+// ProcessStep[] content — the ordered engagement process, per
+// specs/001-architect-portfolio-site/data-model.md. Order is meaningful here
+// (unlike ExpertiseItem): steps render as a sequential timeline.
+export const processSteps = [
   {
-    id: 'data-governance',
-    icon: 'ShieldCheck',
-    title: 'Data governance, covered',
+    id: 'discovery',
+    icon: 'Search',
+    title: 'Discovery & Codebase Audit',
     description:
-      'Analysis runs on our own, self-hosted infrastructure rather than third-party cloud AI services — your code and data never leave a controlled environment during the engagement.',
+      "We review the codebase, architecture, and dependencies using our own self-hosted analysis tooling — automated checks alongside manual review to map structure, complexity, and risk areas, without your code touching third-party cloud AI services.",
   },
   {
-    id: 'reporting',
-    icon: 'FileText',
-    title: 'A clear report, every time',
+    id: 'risk-assessment',
+    icon: 'ShieldAlert',
+    title: 'Risk & Technical Debt Assessment',
     description:
-      'Every analysis concludes with a written report covering findings, risks, and concrete next steps — something your team can act on, not just verbal feedback.',
+      'Findings are classified by severity and risk — security, business continuity, and compliance — and mapped against your actual technical debt, not just abstract code-quality scores.',
+  },
+  {
+    id: 'stakeholder-conversations',
+    icon: 'Users',
+    title: 'Stakeholder Conversations',
+    description:
+      "We talk to the people who use and maintain the system, so priorities reflect real business value — not just whatever is easiest to fix in the code.",
+  },
+  {
+    id: 'documentation-report',
+    icon: 'FileText',
+    title: 'Documentation & Report',
+    description:
+      'Delivered as a structured report: findings ranked by criticality, a risk register, an architecture/dependency map, and a phased remediation roadmap your team can act on directly.',
+  },
+  {
+    id: 'walkthrough-handover',
+    icon: 'MessagesSquare',
+    title: 'Walkthrough & Handover',
+    description:
+      "We walk through the report with your team and answer questions, so the recommendations are understood before the engagement ends — not just handed over as a PDF.",
   },
 ];

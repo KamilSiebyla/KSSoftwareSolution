@@ -13,9 +13,10 @@ Full spec-driven development history (spec, plan, research, and task breakdown) 
   call-to-action toward Contact.
 - **Expertise section** — four concrete areas of expertise (legacy system analysis, maintenance
   & refactoring strategy, root-cause debugging, architecture review), not generic filler.
-- **Approach ("How We Work") section** — data governance (analysis runs on self-hosted
-  infrastructure, not third-party cloud AI) and the written report delivered at the end of every
-  engagement.
+- **Approach ("How We Work") section** — the engagement presented as an animated 5-step timeline
+  (discovery/audit, risk assessment, stakeholder conversations, documentation & report, walkthrough
+  & handover), covering data governance (self-hosted analysis, not third-party cloud AI) and the
+  written report delivered at the end.
 - **Contact** — direct `mailto:`/`tel:`/external-profile links only. No contact form, and no
   visitor data is ever captured or stored.
 - **Persistent navigation** — a contact channel is reachable in one click from anywhere on the
