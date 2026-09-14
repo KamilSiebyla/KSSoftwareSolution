@@ -13,7 +13,7 @@ export default function Expertise() {
       <div className="mx-auto max-w-5xl">
         <SectionHeading
           eyebrow="Expertise"
-          title="What I bring to a system that's grown hard to trust"
+          title="What we bring to a system that's grown hard to trust"
         />
         <ul className="grid gap-6 sm:grid-cols-2">
           {expertiseItems.map((item) => (
